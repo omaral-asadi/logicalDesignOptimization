@@ -29,6 +29,8 @@ It may be assumed throughout that the optimal design is a ‘subnet’ of the
 ‘maximal’ net shown in Figure 12.3.*
 ![image](https://github.com/user-attachments/assets/e71193f5-941b-445a-a718-5c3de55f3ea4)
 
+## Interpretation
+I decided to try solving a more generalized version of this problem. I first imagined a scenario where any number of external logical inputs would be involved with the circuit. I also wanted to consider more than one type of logic gate being utilized in the optimal circuit, specifically the 3 basic logic gates: AND, OR, and NOT. This lead me to work on making a mathematical model for my version of the problem, and to then implement it with the Gurobi solver. As I worked on the problem, I was fascinated by the hypothetical applications for improving various technological devices. After all, our entire understanding of computers is based on the idea of logic gates. I've decided to share my project so others can also have fun with testing the model, along with potentially being inspired to learn more about mathematical optimization
 
 *‘Fan-in’ and ‘fan-out’ are not permitted. That is, more than one output from
 a NOR gate cannot lead into one input nor can one output lead into more than
