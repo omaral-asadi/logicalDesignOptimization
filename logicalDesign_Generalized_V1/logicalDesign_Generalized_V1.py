@@ -3,6 +3,7 @@
 # Description: This program solves for the optimal circuit arrangement for performing specific logic operations
 # Inspired by problem 12 of "Model Building in Mathematical Programming"
 
+# Imports Gurobi Solver
 from gurobipy import*
 
 # Defines number of AND, OR, and NOT gates
@@ -170,8 +171,7 @@ def solveModel():
                 model.addConstr(x[i] >= 1 - (1 - u[l,i,n]), "gateUsageImplication_3[%s,%s,%s]"%(i,k,n))
 
         # Implication from external output connection
-        for i in logicGates:
-            model.addConstr(x[i] >= 1 - (1 - t[i]), "gateUsageImplication_4[%s]"%i)
+        model.addConstr(x[i] >= 1 - (1 - t[i]), "gateUsageImplication_4[%s]"%i)
 
     # Adds constraints for requirement of gate input and output decisions from gate usage
     for i in logicGates:
