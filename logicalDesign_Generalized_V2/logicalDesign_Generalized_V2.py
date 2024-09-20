@@ -4,6 +4,7 @@
 # This new version works for multiple external outputs.
 # Inspired by problem 12 of "Model Building in Mathematical Programming"
 
+# Imports Gurobi Solver
 from gurobipy import*
 
 # Defines number of AND, OR, and NOT gates
