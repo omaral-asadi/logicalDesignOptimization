@@ -26,7 +26,7 @@ Williams (1974), ‘Fan-in’ and ‘fan-out’ are not permitted. That is, more
 a NOR gate cannot lead into one input nor can one output lead into more than
 one input.
 It may be assumed throughout that the optimal design is a ‘subnet’ of the
-‘maximal’ net shown in Figure 12.3.*
+‘maximal’ net shown in Figure 12.3."*
 ![image](https://github.com/user-attachments/assets/e71193f5-941b-445a-a718-5c3de55f3ea4)
 
 ## Interpretation
